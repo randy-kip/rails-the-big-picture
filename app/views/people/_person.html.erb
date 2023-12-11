@@ -1,0 +1,22 @@
+<div id="<%= dom_id person %>">
+  <p>
+    <strong>Email:</strong>
+    <%= person.email %>
+  </p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= person.name %>
+  </p>
+
+  <p>
+    Plants:
+    <ul>
+      <% person.plants.each do |plant| %>
+        <li> <%= link_to plant.name, plant %> </li>
+      <% end %>
+    </ul>
+    
+  </p>
+
+</div>
